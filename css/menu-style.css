@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap");
+
+:root {
+  --primary: #c7a17a;
+  --font-color: #252525;
+  --light: #f9f5ee;
+  --accent: rgb(234, 140, 52);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none !important;
+  font-family: "Oswald", sans-serif;
+  overflow-x: hidden;
+}
+
+.xoco-logo {
+  height: 100px;
+}
+
+footer {
+  background-color: var(--accent);
+}
+
+nav {
+  background-color: var(--light);
+}
+
+#our-story {
+  background-color: var(--primary);
+}
+
+h1,
+h2,
+h3,
+p {
+  color: var(--font-color);
+}
+
+@media only screen and (min-width: 280px) and (max-width: 620px) {
+}
+
+@media only screen and (min-width: 621px) and (max-width: 1199px) {
+}
+
+@media only screen and (min-width: 1200px) {
+  /* Navigation */
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 30px;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+
+  nav .fa-bars {
+    display: none;
+  }
+
+  .nav-links a {
+    color: var(--font-color);
+  }
+
+  .nav-links a:hover {
+    color: var(--primary);
+  }
+
+  #menu {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* footer */
+
+  #footer {
+    height: 150px;
+  }
+
+  #footer > div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .footer-logo {
+    height: 75px;
+  }
+
+  /* form */
+
+  .form-control:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 0.2rem rgba(234, 140, 52, 0.25);
+  }
+}

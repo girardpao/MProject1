@@ -1,0 +1,371 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap");
+
+:root {
+  --primary: #c7a17a;
+  --font-color: #252525;
+  --light: #f9f5ee;
+  --accent: #ea8c34;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  overflow-x: hidden;
+}
+
+.xoco-logo {
+  height: 100px;
+}
+
+footer {
+  background-color: var(--accent);
+}
+
+nav {
+  background-color: var(--light);
+}
+
+#our-story {
+  background-color: var(--primary);
+}
+
+h1,
+h2,
+h3,
+p {
+  color: var(--font-color);
+}
+
+#hero .hero-content .order {
+  border-radius: 10px;
+  padding: 5px 24px;
+  background-color: var(--accent);
+  color: var(--light);
+  border-end-start-radius: 15px;
+  border-start-end-radius: 15px;
+  border-start-start-radius: 0;
+  border-end-end-radius: 0;
+  border: 1px solid var(--accent);
+  box-shadow: 5px 10px 18px #888888;
+  cursor: pointer;
+}
+
+#hero .hero-content .order:hover {
+  background-color: var(--light);
+  color: var(--font-color);
+}
+
+@media only screen and (min-width: 280px) and (max-width: 620px) {
+  .xoco-logo {
+    height: 60px;
+  }
+
+  nav {
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .fa-bars {
+    display: block;
+  }
+
+  #hero h1,
+  #hero p {
+    text-align: center;
+  }
+
+  .xocolat {
+    font-size: 38px;
+  }
+
+  .hero-img {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  #hero {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .heroimg-cont {
+    margin: auto;
+  }
+
+  .cakes-img {
+    display: none;
+  }
+
+  #our-story {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+
+  #our-story h2 {
+    text-align: center;
+  }
+
+  #our-story,
+  .our-story-txt > p {
+    text-align: justify;
+    padding: 10px;
+  }
+
+  #best-selling {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #best-selling > div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #best-selling div img {
+    aspect-ratio: 1/1;
+  }
+
+  .footer-logo {
+    height: 70px;
+  }
+}
+
+@media only screen and (min-width: 621px) and (max-width: 1199px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 30px;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+
+  nav .fa-bars {
+    display: none;
+  }
+
+  .nav-links a {
+    color: var(--font-color);
+  }
+
+  .nav-links a:hover {
+    color: var(--primary);
+  }
+
+  #hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .hero-img {
+    height: 500px;
+    margin: 30px 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .hero-content {
+    margin: 50px;
+  }
+
+  .hero-content > h1 {
+    font-size: 70px;
+  }
+
+  .hero-content > p {
+    font-size: 30px;
+  }
+
+  /* Our Story */
+
+  #our-story {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 0 20px;
+  }
+
+  .cakes-img {
+    height: 500px;
+    margin: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .our-story-txt h2,
+  .our-story-txt p {
+    padding: 10px;
+    width: 600px;
+  }
+
+  /* Best Selling */
+
+  #best-selling {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+    flex-wrap: wrap;
+  }
+
+  #best-selling div img {
+    height: 250px;
+    aspect-ratio: 1/1;
+  }
+
+  #favorites > h2 {
+    text-align: center;
+  }
+
+  /* Footer */
+
+  #footer {
+    height: 150px;
+  }
+
+  #footer > div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .footer-logo {
+    height: 75px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* Navigation */
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 30px;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+
+  nav .fa-bars {
+    display: none;
+  }
+
+  .nav-links a {
+    color: var(--font-color);
+  }
+
+  .nav-links a:hover {
+    color: var(--primary);
+  }
+
+  /* Hero */
+
+  #hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .hero-img {
+    height: 500px;
+    margin: 30px 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .hero-content {
+    margin: 50px;
+  }
+
+  .hero-content > h1 {
+    font-size: 70px;
+  }
+
+  .hero-content > p {
+    font-size: 30px;
+  }
+
+  /* Our Story */
+
+  #our-story {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 0 20px;
+  }
+
+  .cakes-img {
+    height: 500px;
+    margin: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .our-story-txt h2,
+  .our-story-txt p {
+    padding: 10px;
+    width: 600px;
+  }
+
+  /* Favorites */
+
+  #best-selling {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 50px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  #best-selling div img {
+    height: 250px;
+    aspect-ratio: 1/1;
+  }
+
+  #best-selling div h3 {
+    text-align: center;
+  }
+
+  #favorites > h2 {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  /* Footer */
+
+  #footer {
+    height: 150px;
+  }
+
+  #footer > div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .footer-logo {
+    height: 75px;
+  }
+}
