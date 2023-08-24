@@ -263,6 +263,7 @@ p {
   #best-selling div img {
     height: 250px;
     aspect-ratio: 1/1;
+    border-radius: 5px;
   }
 
   #favorites > h2 {
