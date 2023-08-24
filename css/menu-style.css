@@ -39,10 +39,119 @@ p {
   color: var(--font-color);
 }
 
+.form-control:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 0.2rem rgba(234, 140, 52, 0.25);
+}
+
+.footer-content div p {
+  margin-bottom: 0;
+}
+
+#footer {
+  background-color: var(--accent);
+  height: 200px;
+}
+
+.socmed > a {
+  font-size: 30px;
+  color: var(--font-color);
+  margin: 0 5px;
+}
+
+.footer-content {
+  position: relative;
+}
+
+.copyright {
+  position: absolute;
+  bottom: 0;
+  margin: 10px 0;
+  font-size: 12px;
+}
+
 @media only screen and (min-width: 280px) and (max-width: 620px) {
+  .xoco-logo {
+    height: 60px;
+  }
+
+  nav {
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .fa-bars {
+    display: block;
+  }
+
+  .footer-logo {
+    height: 50px;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .copyright {
+    position: static;
+  }
 }
 
 @media only screen and (min-width: 621px) and (max-width: 1199px) {
+  .xoco-logo {
+    height: 80px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 30px;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+
+  nav .fa-bars {
+    display: none;
+  }
+
+  .nav-links a {
+    color: var(--font-color);
+  }
+
+  .nav-links a:hover {
+    color: var(--primary);
+  }
+
+  #footer {
+    height: 150px;
+  }
+
+  #footer > div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+  }
+
+  .footer-logo {
+    height: 75px;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -81,24 +190,14 @@ p {
 
   /* footer */
 
-  #footer {
-    height: 150px;
-  }
-
   #footer > div {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    height: 100%;
   }
 
   .footer-logo {
     height: 75px;
-  }
-
-  /* form */
-
-  .form-control:focus {
-    border-color: var(--accent);
-    box-shadow: 0 0 0 0.2rem rgba(234, 140, 52, 0.25);
   }
 }

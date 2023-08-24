@@ -49,10 +49,6 @@ p {
   height: 200px;
 }
 
-.copyright {
-  font-size: 12px;
-}
-
 .socmed > a {
   font-size: 30px;
   color: var(--font-color);
@@ -67,6 +63,7 @@ p {
   position: absolute;
   bottom: 0;
   margin: 10px 0;
+  font-size: 12px;
 }
 
 @media only screen and (min-width: 280px) and (max-width: 620px) {
