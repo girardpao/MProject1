@@ -39,6 +39,16 @@ p {
   color: var(--font-color);
 }
 
+#menu-label {
+  display: flex;
+  justify-content: center;
+}
+
+#menu-label > h1 {
+  margin: 20px;
+  padding: 20px;
+}
+
 .form-control:focus {
   border-color: var(--accent);
   box-shadow: 0 0 0 0.2rem rgba(234, 140, 52, 0.25);
