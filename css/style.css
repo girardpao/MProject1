@@ -13,7 +13,7 @@
   box-sizing: border-box;
   text-decoration: none;
   font-family: "Oswald", sans-serif;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 .xoco-logo {
@@ -56,6 +56,10 @@ p {
 #hero .hero-content .order:hover {
   background-color: var(--light);
   color: var(--font-color);
+}
+
+.copyright {
+  font-size: 12px;
 }
 
 @media only screen and (min-width: 280px) and (max-width: 620px) {
@@ -138,14 +142,29 @@ p {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-bottom: 15px;
+    padding: 10px;
   }
 
   #best-selling div img {
     aspect-ratio: 1/1;
+    border-radius: 5px;
+  }
+
+  #favorites > h2 {
+    margin: 15px 0;
+    text-align: center;
   }
 
   .footer-logo {
     height: 70px;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 }
 
@@ -227,6 +246,10 @@ p {
     padding: 10px;
   }
 
+  .our-story-txt {
+    max-width: 500px;
+  }
+
   /* Best Selling */
 
   #best-selling {
@@ -260,6 +283,10 @@ p {
 
   .footer-logo {
     height: 75px;
+  }
+
+  .footer-content {
+    height: 100%;
   }
 }
 
