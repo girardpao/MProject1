@@ -49,7 +49,7 @@ p {
   border-start-start-radius: 0;
   border-end-end-radius: 0;
   border: 1px solid var(--accent);
-  box-shadow: 5px 10px 18px #888888;
+  box-shadow: 0px 4px 8px #888888;
   cursor: pointer;
 }
 
@@ -76,6 +76,13 @@ p {
 
   .fa-bars {
     display: block;
+  }
+
+  .hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
   #hero h1,
@@ -143,18 +150,22 @@ p {
 }
 
 @media only screen and (min-width: 621px) and (max-width: 1199px) {
+  .xoco-logo {
+    height: 80px;
+  }
+
   nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 100px;
+    padding: 0 50px;
   }
 
   .nav-links {
     display: flex;
     gap: 30px;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 18px;
   }
 
   nav .fa-bars {
@@ -173,25 +184,26 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 17px;
   }
 
   .hero-img {
-    height: 500px;
+    height: 300px;
     margin: 30px 30px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
   .hero-content {
+    padding: 10px;
     margin: 50px;
   }
 
   .hero-content > h1 {
-    font-size: 70px;
+    font-size: 40px;
   }
 
   .hero-content > p {
-    font-size: 30px;
+    font-size: 17px;
   }
 
   /* Our Story */
@@ -200,20 +212,19 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 17px;
     margin: 0 20px;
   }
 
   .cakes-img {
-    height: 500px;
-    margin: 30px;
+    height: 300px;
+    margin: 17px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
   .our-story-txt h2,
   .our-story-txt p {
     padding: 10px;
-    width: 600px;
   }
 
   /* Best Selling */
@@ -221,8 +232,9 @@ p {
   #best-selling {
     display: flex;
     justify-content: center;
-    margin: 50px 0;
+    margin: 15px 0;
     flex-wrap: wrap;
+    gap: 7px;
   }
 
   #best-selling div img {
@@ -297,6 +309,7 @@ p {
 
   .hero-content {
     margin: 50px;
+    padding: 10px;
   }
 
   .hero-content > h1 {
@@ -342,6 +355,7 @@ p {
   #best-selling div img {
     height: 250px;
     aspect-ratio: 1/1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
   #best-selling div h3 {
@@ -363,6 +377,7 @@ p {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    height: 100%;
   }
 
   .footer-logo {
