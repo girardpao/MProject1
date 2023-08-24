@@ -4,7 +4,7 @@
   --primary: #c7a17a;
   --font-color: #252525;
   --light: #f9f5ee;
-  --accent: rgb(234, 140, 52);
+  --accent: #ea8c34;
 }
 
 * {
@@ -37,6 +37,11 @@ p {
 
 #contact-info {
   margin: 20px;
+}
+
+#form {
+  display: flex;
+  justify-content: center;
 }
 
 .form-control:focus {
